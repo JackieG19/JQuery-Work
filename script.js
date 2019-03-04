@@ -1,5 +1,5 @@
 /*global $*/
 
 $(document).ready(function(){
-    alert("jquery tutorisl");
+    alert("working with jquery");
 });
