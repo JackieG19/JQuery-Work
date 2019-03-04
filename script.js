@@ -87,6 +87,8 @@ $("#contact-methods").css({border: "2px solid red"})
     .closest$("section").css({border: "2px solid blue"});
 
 
+// Adding content using jquery
+
 // some code to pull in my latest twitter tweet
 var tweet = "<div style='margin: 20px 0; padding= 10px; background: #eee'>The big fight live: Han vs Cheese:</div>";
 
@@ -110,3 +112,32 @@ $("#tweets div").html(tweet);
 // .text() changes the text of an element
 $("#tweets div p").text(tweet);
 
+
+// Wrap and Unwrap Elements
+
+// wrap() - wrap all matched elements indivdually
+// $("section").wrap("<div>");
+
+// unwrap() - unwrap all matched elements 
+//$("section").unwrap();
+
+// wrapAll() - wrap all elements combined with 1 single element
+// $("section").wrapAll("<div>");
+
+var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick = function(){
+  if(wrapped){
+      $("section").unwrap();
+      wrapped = false;
+      button.text("Wrap");
+  }
+  
+  else{
+      $("section").wrapAll(wrapper);
+      wrapped = true;
+      button.text("Unwrap");
+  }
+};
