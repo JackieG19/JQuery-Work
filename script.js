@@ -75,3 +75,13 @@ $("#contact").find(".facebook").css({border: "3px solid purple"});
 
 // closest
 $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});
+
+
+// chaining - that just speed up the code production
+// it has the ability to chain together multipule functions or methods on a particular
+// set of jquery objectsor element that we grab from the page in one line of code and 
+// chaining them together using a dot syntax
+
+$("#contact-methods").css({border: "2px solid red"})
+    .next().css({border: "2px solid green"})
+    .closest$("section").css({border: "2px solid blue"});
