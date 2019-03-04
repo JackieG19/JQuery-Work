@@ -85,3 +85,28 @@ $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});
 $("#contact-methods").css({border: "2px solid red"})
     .next().css({border: "2px solid green"})
     .closest$("section").css({border: "2px solid blue"});
+
+
+// some code to pull in my latest twitter tweet
+var tweet = "<div style='margin: 20px 0; padding= 10px; background: #eee'>The big fight live: Han vs Cheese:</div>";
+
+// adding and changing content
+
+// .append() adds content to the bottom of the element
+$("#tweets div").append(tweet);
+
+// .prepend() adds content to the top of element
+$("#tweets div").prepend(tweet);
+
+// .before() adds content before the element
+$("#tweets div p").before(tweet);
+
+// .after() adds content after the element
+$("#tweets div p").after(tweet);
+
+// .html() changes the whole html of the element
+$("#tweets div").html(tweet);
+
+// .text() changes the text of an element
+$("#tweets div p").text(tweet);
+
