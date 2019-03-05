@@ -18,6 +18,9 @@ heading.animation({left: 100})
 // grabbing an element in a jquery wrapper and manipulate it further
 $("#lead-banner p");
 
+
+// ** Selectors are used to grab content from the webpage and are made using CSS syntax
+
 // element selectors
 $("h3").css({border: "3xp solid blue"});
 
@@ -27,8 +30,8 @@ $(".wapper").css({border: "3xp solid red"});
 // ID selectors
 $("#clients").css({border: "3xp solid yellow"});
 
-// filter can be used to refine selectors to make them more specific very much 
-// like css psuedo classes. 
+
+// ** Filters can be used to refine selectors to make them more specific very much like css psuedo classes. 
 
 // first and last
 $("header nav li:first").css({border: "2px solid red"});
@@ -56,7 +59,7 @@ $("img[alt]").css({border: "2px solid pink"});
 $("img[alt=quote]").css({border: "2px solid purple"});
 
 
-// Traversing the DOM with jQuery
+// ** Traversing the DOM with jQuery
 
 // next
 $("#contact-methods").next().css({border: "3px solid red"});
@@ -77,17 +80,15 @@ $("#contact").find(".facebook").css({border: "3px solid purple"});
 $("#social-nav").closest(".wrapper").css({border: "3px solid orange"});
 
 
-// chaining - that just speed up the code production
-// it has the ability to chain together multipule functions or methods on a particular
-// set of jquery objects or element that we grab from the page in one line of code and 
-// chaining them together using a dot syntax
+// ** Chaining has the ability to chain together multipule functions or methods on a particular set of jquery objects 
+// or element that we grab from the page in one line of code and chaining them together using a dot syntax
 
 $("#contact-methods").css({border: "2px solid red"})
     .next().css({border: "2px solid green"})
     .closest$("section").css({border: "2px solid blue"});
 
 
-// Adding content using jquery
+// ** Adding content using jquery
 
 // some code to pull in my latest twitter tweet
 var tweet = "<div style='margin: 20px 0; padding= 10px; background: #eee'>The big fight live: Han vs Cheese:</div>";
@@ -113,7 +114,7 @@ $("#tweets div").html(tweet);
 $("#tweets div p").text(tweet);
 
 
-// Wrap and Unwrap Elements
+// ** Wrap and Unwrap Elements
 
 // wrap() - wrap all matched elements indivdually
 // $("section").wrap("<div>");
