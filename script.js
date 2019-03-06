@@ -17,7 +17,7 @@ console.log($("#content img").removeAttr("alt"));
 $("#content img").attr("alt", "location");
 
 
-// ** changing CSS property of certain elements
+// changing CSS property of certain elements
 
 console.log($("#social-nav").css("position"));
 $("#social-nav").css("top", "-200px").css("left", "100px");
@@ -33,3 +33,14 @@ $("#social-nav").css({
   "opacity": "8.5",
   "border-top": "4px solid red"
 });
+
+
+
+// ** Adding & Removing Classes
+
+// removeClass() - removes a class from the matched element(s)
+$("header .wrapper", ).removeClass("wrapper");
+
+// addClass() - adds a class to the matched element(s)
+$("header > div").addClass("wrapper");
+// toggleClass - toggle the class on and off on the matched element(s)
