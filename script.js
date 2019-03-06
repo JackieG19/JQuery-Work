@@ -8,7 +8,6 @@ $("#points-of-sale").empty();
 $(".button").empty();
 $("#contact img").empty();
 
-
 // removeAttr() - removes an attribute completely
 $("#content img").removeAttr("alt");
 console.log($("#content img").removeAttr("alt"));
@@ -18,7 +17,6 @@ $("#content img").attr("alt", "location");
 
 
 // changing CSS property of certain elements
-
 console.log($("#social-nav").css("position"));
 $("#social-nav").css("top", "-200px").css("left", "100px");
 
@@ -35,8 +33,7 @@ $("#social-nav").css({
 });
 
 
-
-// ** Adding & Removing Classes
+// Adding & Removing Classes
 
 // removeClass() - removes a class from the matched element(s)
 $("header .wrapper", ).removeClass("wrapper");
@@ -44,3 +41,17 @@ $("header .wrapper", ).removeClass("wrapper");
 // addClass() - adds a class to the matched element(s)
 $("header > div").addClass("wrapper");
 // toggleClass - toggle the class on and off on the matched element(s)
+
+
+// ** Binding & Unbinding Events
+
+// on() - binds an event to matched element(s)
+// off() - unbinds an event from matched element(s) 
+
+var myLis = $("#points-of-sale li");
+myLis.on("click", function(){
+  $(this).css({"background": "pink"});
+  myLis.off("click");
+});
+
+
