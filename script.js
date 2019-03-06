@@ -55,9 +55,16 @@ myLis.on("click", function(){
 });
 
 
-// ** Event Helpers
+// Event Helpers
 
 $("#lead-banner").dblclick(function(){
   alert("you double click me");
   $("#lead-banner").off("dbclick");
 });
+
+// ** Document Ready vs Window Load
+$(document).on("ready", function(){
+  // some code here
+});
+
+// ready means when all the elements have been loaded or DOM to bind events to 
