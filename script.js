@@ -43,7 +43,7 @@ $("header > div").addClass("wrapper");
 // toggleClass - toggle the class on and off on the matched element(s)
 
 
-// ** Binding & Unbinding Events
+// Binding & Unbinding Events
 
 // on() - binds an event to matched element(s)
 // off() - unbinds an event from matched element(s) 
@@ -55,3 +55,9 @@ myLis.on("click", function(){
 });
 
 
+// ** Event Helpers
+
+$("#lead-banner").dblclick(function(){
+  alert("you double click me");
+  $("#lead-banner").off("dbclick");
+});
